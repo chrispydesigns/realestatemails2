@@ -1,0 +1,153 @@
+		<!-- end: HEADER -->
+		<!-- start: MAIN CONTAINER -->
+		<div class="main-container">
+			
+
+			<section class="page-top">
+				<div class="container">
+					<div class="col-md-4 col-sm-4">
+						<h1>Pricing and Coverage</h1>
+					</div>
+					<div class="col-md-8 col-sm-8">
+						<ul class="pull-right breadcrumb">
+							<li>
+								<a href="index.html">
+									Home
+								</a>
+							</li>
+					
+							<li class="active">
+								Pricing and Coverage
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="wrapper no-padding">
+				<div id="map"></div>
+			</section>
+			<section class="wrapper no-padding">
+				<div class="container">
+				
+			<section class="wrapper wrapper-grey">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="promobox">
+								<p class="center">
+									
+								</p>
+								<p class="center">
+									<a href="http://themeforest.net/item/clipone-bootstrap-3-responsive-admin-template/5881143?ref=Cliptheme" class="btn btn-bricky">
+										Buy Now
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- end: MAIN CONTAINER -->
+		<!-- start: FOOTER -->
+		<footer id="footer">
+			
+			<div class="footer-copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-1">
+							<a class="logo" href="index.html">
+									<img src="assets/images/logo-header.png" width="119" height="71" alt="" border="0">	
+							</a>
+						</div>
+						<div class="col-md-7">
+							<p>
+								         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&copy; Copyright 2014
+							</p>
+						</div>
+						<div class="col-md-4">
+							<nav id="sub-menu">
+								<ul>
+									<li>
+										<a href="#">
+											FAQ's
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Sitemap
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											Contact
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<a id="scroll-top" href="#"><i class="fa fa-angle-up"></i></a>
+		<!-- end: FOOTER -->
+		<!-- start: MAIN JAVASCRIPTS -->
+		<!--[if lt IE 9]>
+		<script src="assets/plugins/respond.min.js"></script>
+		<script src="assets/plugins/excanvas.min.js"></script>
+		<script src="assets/plugins/html5shiv.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
+		<!--[if gte IE 9]><!-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<!--<![endif]-->
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/plugins/jquery.transit/jquery.transit.js"></script>
+		<script src="assets/plugins/hover-dropdown/twitter-bootstrap-hover-dropdown.min.js"></script>
+		<script src="assets/plugins/jquery.appear/jquery.appear.js"></script>
+		<script src="assets/plugins/blockUI/jquery.blockUI.js"></script>
+		<script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+		<script src="assets/js/main.js"></script>
+		<!-- end: MAIN JAVASCRIPTS -->
+		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script src="assets/plugins/flex-slider/jquery.flexslider.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script src="assets/plugins/gmaps/gmaps.js"></script>
+		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script>
+			jQuery(document).ready(function() {
+				Main.init();
+				map = new GMaps({
+					Center: {lat: 39.845364, lng:  -100.630820},
+                    div: '#map',
+					lat: 33.445970, 
+					lng: -112.080500,
+                    zoom: 4
+				});
+			-112.080500
+                map.addMarker({
+					lat: 33.445970, 
+					lng:  -112.080500,
+					title: 'National Coverage',
+					details: {
+						database_id: 42,
+						author: 'HPNeo'
+					},
+					click: function(e) {
+						if(console.log)
+							console.log(e);
+						alert('Total # of Agents is this list is " "');
+					}
+				});
+				map.addMarker({
+					lat: 36.176593, 
+					lng: -115.264609,
+					title: 'Marker with InfoWindow',
+					infoWindow: {
+						content: '<p>Total # of Agents is this list is " "</p>'
+					}
+				});
+               
+			});
+		</script>

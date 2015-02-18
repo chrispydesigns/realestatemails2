@@ -1,0 +1,36 @@
+<h1>Administration Dashboard </h2>
+
+<div>
+  <h2>Registered User</h2>
+  <p style='margin-left: 20px;'>
+    <%= link_to 'Users', admin_users_path, class: 'btn btn-tiny btn-info' %>
+  </p>
+</div>
+
+<div>
+  <h2>Templates </h2>
+  <%= model_tabular_content( @templates || [], {name: "Show", path: "admin_template_path"} ) %>
+  <%= paginate @templates %>
+  <%= link_to 'New Template', new_admin_template_path, class: 'btn btn-tiny bt-info' %>
+</div>
+
+<div>
+  <h2>Credit Card Subscription Plans </h2>
+  <%= model_tabular_content(@plans) %>
+</div>
+
+<div>
+  <h2>HTML Static Pages</h2>
+  <%= model_tabular_content( @static_pages || []) %>
+  <%= paginate @static_pages %>
+  <%= link_to 'New Static Page', new_admin_static_page_path, class: 'btn btn-tiny bt-info' %>
+</div>
+
+<div>
+  <h2>Realtor Emails</h2>
+  <p style='margin-left: 20px;'>
+    <%= link_to 'Realtors', admin_realtors_path, class: 'btn btn-tiny btn-info' %>
+  </p>
+</div>
+
+

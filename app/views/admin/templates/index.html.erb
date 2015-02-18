@@ -1,0 +1,29 @@
+<h1>Listing templates</h1>
+
+<div class='table-responsive'>
+  <table class='table table-striped table-bordered'>
+    <thead>
+      <tr>
+	<th>Name</th>
+	<th>Description</th>
+	<th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% templates.each do |tmpl| %>
+        <tr>
+          <td><%= tmpl.name %></td>
+          <td><%= tmpl.description %></td>
+          <td><%= link_to 'Show', [:admin, tmpl] %></td>
+          <td><%= link_to 'Edit', edit_admin_template_path(tmpl) %></td>
+          <td><%= link_to 'Destroy', [:admin, tmpl], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	</tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<%= link_to 'New Template', new_admin_template_path %>

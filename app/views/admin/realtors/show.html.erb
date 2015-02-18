@@ -1,0 +1,31 @@
+<p id="notice" style="margin-top: 30px;"><%= notice %></p>
+<div class="col-sm-4">
+
+  <h2> Profile </h2>
+  <p style="margin-left: 20px;">
+    <%= image_tag 'http://placehold.it/100x100' %>
+  </p>
+
+  <p style="margin-left: 10px;">
+    <strong>Name:</strong>
+    <%= realtor.name %>
+  </p>
+
+  <p style="margin-left: 10px;">
+    <strong>Email:</strong>
+    <%= realtor.email %>
+  </p>
+
+  <p style="margin-left: 10px;">
+    <strong>City:</strong>
+    <%= realtor.city %>
+  </p>
+
+</div>
+
+<div class="col-sm-8">
+  <p style="margin-left: 10px;">
+    <%= link_to 'Edit', edit_admin_realtor_path([:admin, realtor]) %> |
+    <%= link_to 'Back', admin_realtors_path %>
+  </p>
+</div>

@@ -1,0 +1,13 @@
+{
+    "name": "sass-css3-animations",
+    "description": "CSS3 animations classes & mixins written in SASS",
+    "version": "1.0.0",
+    "keywords": [
+        "css3",
+        "animcations",
+        "sass",
+        "scss",
+        "mixins"
+    ],
+    "main": "sass/css3-animations.scss"
+}

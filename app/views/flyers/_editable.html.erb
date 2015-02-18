@@ -1,0 +1,24 @@
+<div class="main-container ">
+  <section class="page-top">
+    <div class="container">
+      <div class="row">
+	<p id="notice"><%#= notice %></p>
+	<div class="col-md-6">
+	  <p><strong>Name:</strong> <%= flyer.name %></p>
+	  <%= link_to 'Back', flyers_path, class: 'btn btn-tiny btn-primary' %>
+	</div>
+	<div class="col-md-6">
+	  <p><strong>Description:</strong>  <%= flyer.description %></p>
+	</div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper">
+    <div class="container">
+      <div>
+	<%== flyer.content_body %>
+      </div>
+
+    </section>
+  </div>
+</div>

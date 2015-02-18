@@ -1,0 +1,19 @@
+<h1>Welcome: <%= current_agent.name %></h1>
+<h2> To get started is easy! </h2>
+<div class="container">
+  <div class="row">
+  <div class="col-md-4">
+    <p> First step, select one of our beautiful flyers or, start a new one</p>
+    <img src='http://placehold.it/360x300' >
+  </div>
+  <div class="col-md-4">
+    <p> Modify it if needed and select the email recipients</p>    
+    <img src='http://placehold.it/360x300', style='margin-bottom: 20px' >
+    <%= link_to 'Design Flyer' , flyers_path, class: 'btn btn-primary btn-lg btn-block' %>
+  </div>
+  <div class="col-md-4">
+    <p> Pay for it and send it</p>
+    <img src='http://placehold.it/360x300' >
+  </div>
+  </div>
+</div>

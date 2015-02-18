@@ -1,0 +1,48 @@
+{
+  "name": "realestateemails",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ujs": "latest",
+    "jquery": "1.11.1",
+    "jquery-ui": "latest",
+    "underscore": "latest",
+    "jquery-autosize": "latest",
+    "imagesloaded": "latest",
+    "flight": "latest",
+    "json2": "latest",
+    "summernote": "latest",
+    "codemirror": "latest",
+    "animate.css": "~>3.0.0",
+    "blockui": "latest",
+    "bootstrap": "~>3.1.0",
+    "bootstrap-progressbar": "~>0.6.0",
+    "bootstrap-social-buttons": "latest",
+    "colorbox": "~>1.4.3",
+    "sass-css3-animations": "latest",
+    "flexslider": "latest",
+    "font-awesome": "latest",
+    "gmaps": "~>0.4.5",
+    "bootstrap-hover-dropdown": "~>2.0.1",
+    "html5shiv": "~>3.7.2",
+    "appear": "latest",
+    "jquery.cookie": "~>1.4.1",
+    "jquery.transit": "~>0.9.12",
+    "mixitup": "~>2.1.6",
+    "respond": "~>1.4.2",
+    "stellar": "~>0.6.2",
+    "touchy": "latest",
+    "excanvas": "latest"
+  },
+  "devDependencies": {
+    "flight-jasmine": "latest",
+    "jasmine-jquery": "2.0.1"
+  }
+}
+

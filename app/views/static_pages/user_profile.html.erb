@@ -1,0 +1,40 @@
+<br><br>
+
+<div class="container" align="center">
+
+  <h1>Welcome <strong><%= current_agent.name %></strong></h1>
+    
+	<br><h1><strong>DASHBOARD</strong> </h1>
+
+
+
+
+<br><br><br>
+	
+    <div class="row">
+      <div class="col-md-4">
+	<%= image_tag 'layout/create-email.png', size: '250x200',alt: 'Create Real Estate Emails ' %> 
+	 <p> <h1><strong>Create an<br>Email Flyer</strong></h1></p> 
+
+	      <%= link_to 'START' , flyers_path, class: 'btn btn-primary btn-lg ' %>
+      </div>
+      <div class="col-md-4">
+	  <%= image_tag 'layout/saved-emails.png', size: '250x200',alt: 'Create Real Estate Emails ' %>
+	  <p> <h1><strong>View Saved<br>Email Flyers</strong></h1></p>    
+	
+	    <%= link_to 'VIEW' , flyers_path, class: 'btn btn-primary btn-lg ' %>
+      </div>
+      <div class="col-md-4">
+	     <%= image_tag 'layout/get-help.png', size: '250x200',alt: 'Create Real Estate Emails ' %> 
+	    <p> <h1><strong>Get<br>Help</strong></h1></p> 
+	
+	       <%= link_to 'HELP' , flyers_path, class: 'btn btn-primary btn-lg ' %>
+      </div>
+      
+    </div>
+
+  </div>
+
+  
+				
+	

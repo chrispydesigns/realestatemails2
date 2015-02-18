@@ -1,0 +1,52 @@
+<h1>Starter Templates</h1>
+
+<div class='table-responsive'>
+  <table class='table table-striped table-bordered'>
+    <thead>
+      <tr>
+	<th>Name</th>
+	<th>Description</th>
+	<th colspan="3" class="text-center"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% templates.each do |tmpl| %>
+        <tr>
+          <td><%= tmpl.name %></td>
+          <td><%= tmpl.description %></td>
+          <td class="text-center"><%= link_to 'Make a Flyer', personalize_flyer_path(tmpl), class: 'btn btn-tiny btn-primary' %></td>
+	</tr>
+	<% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<h1>Flyers</h1>
+
+<div class='table-responsive'>
+  <table class='table table-striped table-bordered'>
+    <thead>
+      <tr>
+	<th>Name</th>
+	<th>Description</th>
+	<th colspan="3" class="text-center"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% flyers.each do |flyer| %>
+        <tr>
+          <td><%= flyer.name %></td>
+          <td><%= flyer.description %></td>
+          <td class="text-center"><%= link_to 'Edit', edit_flyer_path(flyer), class: 'btn btn-tiny btn-primary' %> <%= link_to 'Send Email', send_email_flyer_path(flyer), remote: true, class: 'btn btn-tiny btn-primary' %></td>
+	</tr>
+	<% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+

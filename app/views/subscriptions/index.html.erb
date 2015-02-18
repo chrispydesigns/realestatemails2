@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="row">
+    <h1>Listing subscriptions</h1>
+
+    <div class="col-md-3">
+      <h3> Silver</h3>
+      <p> Effective </p>
+      <p><span>$9.99</span><span>/Month</span></p>
+      <%= link_to 'Choose this plan', "#{new_subscription_path}/?plan_id=1", class: 'btn btn-medium btn-info' %>
+      <p>
+	<ul>
+	  <li>5,000 emails per month</li>
+	  <li>5 Flyers</li>
+	</ul>
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h3>Gold</h3>
+      <p> Effective </p>
+      <p><span>$29.99</span><span>/Month</span></p>
+      <%= link_to 'Choose this plan', "#{new_subscription_path}/?plan_id=2", class: 'btn btn-medium btn-info' %>
+      <p>
+	<ul>
+	  <li>16,000 emails per month</li>
+	  <li>10 Flyers</li>
+	  <li>3 Custom mailing lists</li>
+	</ul>
+      </p>
+    </div>
+    <div class="col-md-3">
+      <h3>Platinum</h3>
+      <p> Effective </p>
+      <p><span>$49.99</span><span>/Month</span></p>
+      <%= link_to 'Choose this plan', "#{new_subscription_path}/?plan_id=3", class: 'btn btn-medium btn-info' %>
+      <ul>
+	<li>22,000 emails per month</li>
+	<li>100 Flyers</li>
+	<li>10 Custom mailing lists</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h3>Corporate</h3>
+      <p>When you want the best</p>
+      <p>Custom, contact us</p>
+      <%= link_to 'Choose this plan', "#{contact_us_path}/?plan_id=4", class: 'btn btn-medium btn-info' %>
+      <ul>
+	<li>Tier system</li>
+	<li>Unlimited Flyers</li>
+	<li>Large pool of mailing lists</li>
+      </ul>
+    </div>
+  </div>
+</div>

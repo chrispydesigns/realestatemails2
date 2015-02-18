@@ -1,0 +1,24 @@
+<div class="main-container ">
+  <section class="page-top">
+    <div class="container">
+      <div class="row">
+	<p id="notice"><%= notice %></p>
+	<div class="col-md-6">
+	  <p><strong>Name:</strong> <%= template.name %></p>
+	  <%= link_to 'Back', admin_templates_path, class: 'btn btn-tiny btn-primary' %>
+	</div>
+	<div class="col-md-6">
+	  <p><strong>Description:</strong>  <%= template.description %></p>
+	</div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper">
+    <div class="container">
+      <div>
+	<%== template.content_body %>
+      </div>
+
+    </section>
+  </div>
+</div>

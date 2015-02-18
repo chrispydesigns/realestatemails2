@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real Estate Emails</title>
+  <!-- start: META -->
+  <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta content="" name="description" />
+  <meta content="" name="author" />
+  <!-- end: META -->
+  <!-- start: MAIN CSS -->
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'https://js.stripe.com/v2', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application_lean', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= tag :meta, name: 'stripe-key', content: STRIPE_PUBLIC_KEY %>
+</head>
+<body>
+  <header>
+    <%= render partial: 'shared/top_bar' %>
+    <%= render partial: 'shared/navigation' %>
+  </header>
+
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  
+  <%= yield %>
+
+</body>
+</html>

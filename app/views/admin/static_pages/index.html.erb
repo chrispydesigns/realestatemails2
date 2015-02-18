@@ -1,0 +1,27 @@
+<h1>Static Pages</h1>
+<div class='table-responsive'>
+  <table class='table table-striped' id='list_static_pages'>
+    <thead>
+      <tr>
+	<% static_pages.first.display_page_attributes.each do |attr| %>
+	  <th><%= attr %></th>
+        <% end %>
+      <tr>
+    <tbody>
+      <% static_pages.each do |page| %>
+        <tr>
+	  <td><%= link_to 'Edit', edit_admin_static_page_path(page) %> </td>
+	  <td><%= form_for [:admin, page], method: 'delete' do |f| %>
+                 <%= f.submit 'Delete' %>
+              <% end %></td>
+	  <% page.page_attributes.each do |attr| %>
+	    <td><%= page.send(attr.to_sym) %></td>
+	  <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+      
+<%= paginate static_pages %>
+<%= link_to 'Add Page', new_admin_static_page_path %>

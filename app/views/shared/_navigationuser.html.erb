@@ -1,0 +1,57 @@
+
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<!-- start: TOP NAVIGATION CONTAINER -->
+			<div class="container">	
+				<!-- start: LOGO -->
+					<a class="navbar-brand" href="#"><%= image_tag 'static/logo-header.png', size: '130x80',alt: 'Real Estate Emails Logo' %> </a>
+				
+		    <br>   <br>
+				<ul class="nav navbar-right">
+			
+					
+					
+						
+						
+					    <!-- start: USER DROPDOWN -->
+						<li class="dropdown current-user">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								
+								<span class="username"><strong><%= current_agent.name %></strong></span>
+								<i class="clip-chevron-down"></i>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="pages_user_profile.html">
+										
+										<% if user_signed_in? %>
+										
+									  <%= link_to 'Dashboard', '/dashboard.html' %> 
+ 
+									    <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %>
+ 
+									    <% else %>
+									    <%= link_to "Register", new_user_registration_path, :class => 'navbar-link'  %>
+									    <%= link_to "Sign in", new_user_session_path, :class => 'navbar-link'  %>
+									    <% end %>
+		
+										
+										
+								</li>
+								
+								
+								
+						<li>
+	
+										
+										 <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+										
+									
+								</li></HR> 
+							</ul>
+						</li>
+					
+
+     
+			
+			</ul>
+			</nav>

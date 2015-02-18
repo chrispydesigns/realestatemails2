@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @plan.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @plan.price %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @plan.price %>
+</p>
+
+<p>
+  <strong>Frequency:</strong>
+  <%= @plan.frequency %>
+</p>
+
+<%= link_to 'Edit', edit_plan_path([:admin, @plan]) %> |
+<%= link_to 'Back', admin_plans_path %>

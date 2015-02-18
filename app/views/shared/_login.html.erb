@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+  <strong><%= link_to 'Get Started', dispatcher_start_path, :class => 'navbar-link'  %></strong>  &nbsp;&nbsp;
+<% else %><br><br>
+   <strong><%= link_to 'Sign In', dispatcher_start_path %></strong>    or
+    <strong><%= link_to 'Register', dispatcher_start_path %></strong>
+<% end %>
+

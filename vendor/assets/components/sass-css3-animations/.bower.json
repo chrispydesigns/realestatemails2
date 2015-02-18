@@ -1,0 +1,23 @@
+{
+  "name": "sass-css3-animations",
+  "description": "CSS3 animations classes & mixins written in SASS",
+  "version": "1.0.1",
+  "keywords": [
+    "css3",
+    "animcations",
+    "sass",
+    "scss",
+    "mixins"
+  ],
+  "main": "sass/css3-animations.scss",
+  "homepage": "https://github.com/kwarkjes/sass-css3-animations",
+  "_release": "1.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.1",
+    "commit": "25af776d855cb7a2a879dc18451ae98d720d51fc"
+  },
+  "_source": "git://github.com/kwarkjes/sass-css3-animations.git",
+  "_target": "*",
+  "_originalSource": "sass-css3-animations"
+}
